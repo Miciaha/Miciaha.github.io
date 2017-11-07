@@ -1643,7 +1643,7 @@
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #01BAEF;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1987,7 +1987,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #fff;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2032,19 +2032,19 @@
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					color: #01BAEF;
 				}
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 1.75em 1.1em 1.5em 1.1em;
 		min-height: 48px;
 		cursor: default;
+		text-align: center;
 	}
 
 		#logo h1 {
 			position: relative;
-			color: #fff;
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2054,7 +2054,7 @@
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: grey;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2072,7 +2072,7 @@
 		#nav ul li a {
 			display: block;
 			padding: 0.5em 1.5em 0.5em 1.5em;
-			color: rgba(255, 255, 255, 0.5);
+			color: #41484c;
 			text-decoration: none;
 			outline: 0;
 			border: 0;
@@ -2104,7 +2104,7 @@
 			}
 
 				#nav ul li a.active span:before {
-					color: #e27689;
+					color: #01BAEF;
 				}
 
 /* Footer */
