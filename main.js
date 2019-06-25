@@ -9,3 +9,8 @@ function mobileMenu(){
         menu.className="menu";
     }
 }
+
+function changeTheme(){
+    $("#business-home").fadeOut();
+    $("#home").fadeIn()
+}

@@ -4,10 +4,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e9949b22b.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
     <div id="mainMenu" class="menu">
+        <div class="logo"></div>
         <div class="menu-nav" id="nav">
             <a class="active" href="#home">Home</a>
             <a href="#experience">Experience</a>
@@ -18,19 +20,16 @@
             </a>
         </div>
     </div>
-    <div id="home" class="section-home business">
+    <div id="business-home" class="section-home business">
         <div class="home">
-            <div id="intro" class="intro business">
-                <h1>Hello, my name is <span style="color: #2b8fec; background-color:#fff; text-shadow: none;">Miciaha</span></h1>
+            <div id="business-intro" class="intro">
+                <h1>Hello, my name is <span style="color: #505050;">Miciaha</span></h1>
             </div>
-            <div id="playPic" class="myPic">
-                <img src="images/me.png">
-            </div>
-            <div class="myPic business">
+            <div id="business-pic" class="myPic">
                 <img src="images/business.jpeg">
             </div>
-            <div class="aboutMe">
-                <h1 id="business">I enjoy combining my passion for people and my broad technical skillset to find problems and create solutions.</h1>
+            <div id="business-aboutme" class="aboutMe">
+                <h1 id="business">I enjoy employing my passion for people and my broad technical skillset to find problems and create solutions.</h1>
             </div>
             <div id="color" class="specialButton">
                 <a href="javascript:void(0);" onclick="changeTheme()">
@@ -40,15 +39,26 @@
         </div>
 
     </div>
-    <div id="experience" class="section-exp">
+    <div id="home" class="section-home real">
+        <div class="home">
+            <div id="intro">
+                <h1>Hi, I'm <span id="name">Miciaha</span>, a developer seeking opportunities for innovation.</h1>
+            </div>
+            <div id="aboutMe">
+                <h1>I enjoy employing my passion for people and my broad technical skillset to find problems and create solutions.</h1>
+            </div>
+        </div>
 
     </div>
-    <div id="projects" class="section-pro">
+    <div id="experience" class="section-exp business">
+
+    </div>
+    <div id="projects" class="section-pro business">
         
         </div>
-    <div id="contact" class="section-connect">
+    <div id="contact" class="section-connect business">
 
     </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
