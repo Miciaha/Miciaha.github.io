@@ -578,6 +578,8 @@ body{
 }
 
 .experience.visible{
+    position: sticky;
+    z-index: 2;
     opacity: 1;
 }
 

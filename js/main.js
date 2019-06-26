@@ -1,5 +1,6 @@
 $(document).ready(function(){
     console.log("ready");
+    
 
 
     setTimeout(function(){
@@ -100,3 +101,4 @@ function mobileMenu(){
     cont.className="section-connect";
 }
 */
+var rellax = new Rellax('.rellax');
