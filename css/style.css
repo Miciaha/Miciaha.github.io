@@ -157,7 +157,7 @@ body{
 /* HOME SECTION */
 .section-home{
     height: 100vh;
-    cursor: url("images/cursor1.png"), auto;
+    cursor: url("../images/cursor1.png"), auto;
 }
 .home{
     display: grid;
@@ -172,7 +172,23 @@ body{
     max-width: 425px;
 }
 
-.header{
+.aboutMe-title{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    z-index: 0;
+}
+.aboutMe-title h1{
+   display: none;
+   font-family: 'Roboto', sans-serif; 
+   writing-mode: vertical-rl;
+   text-orientation: mixed; 
+   font-size: 10vw;
+   color: #ffffff70;
+}
+
+.greeting{
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 1;
@@ -183,11 +199,12 @@ body{
     text-align: right;
 }
 
-.header h1{
+.greeting h1{
     display: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16vw;
     color: #1515157d;
+    text-align: center;
 }
 
 
@@ -195,7 +212,7 @@ body{
 .business{
     opacity: 1;
     background: rgb(255, 255, 255);
-    background-image: url("images/tile.png");
+    background-image: url("../images/tile.png");
     -webkit-animation: Static 0.0141s linear infinite;
 	-moz-animation: Static 0.0141s linear infinite;
     animation: Static 0.0141s linear infinite;
@@ -287,9 +304,9 @@ body{
 
 /*Real Landing Page*/
 .real{
-    background: rgb(61,39,201);
-    background-image: url("images/geo.png");
-    background-image: url("images/geo.png"), linear-gradient(245deg, rgba(61,39,201,1) 0%, rgba(135,116,255,1) 100%);
+    background: rgb(29,25,171);
+    background-image: url("../images/geo.png");
+    background-image: url("../images/geo.png"), linear-gradient(170deg, rgba(27,139,255) 0%, rgba(29,25,171) 100%);
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -322,10 +339,8 @@ body{
 #intro{
     grid-column-start:2;
     grid-column-end:10;
-    grid-row-start:7;
+    grid-row-start:5;
     grid-row-end:7;
-    justify-content: center;
-    align-self: center;
     position: sticky;
     z-index: 5;
     transition: all 2s;
@@ -339,7 +354,7 @@ body{
     display: none;
     color: white;
     text-decoration: underline;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .words:hover{
@@ -359,7 +374,7 @@ body{
 #pic{
     position: relative;
     width:175px;
-    background-image: url("images/play.jpeg");
+    background-image: url("../images/play.jpeg");
     top: -61px;
     left: 62px;
 }
@@ -367,17 +382,21 @@ body{
     display: none;
     color: #fff;
 }
+#name-text{
+    display: none;
+}
+
 #mePicture{
     display: none;
     z-index: 1;
-    width: 36%;
+    width: 60%;
     position:sticky;
 }
 
 #picture{
-    grid-column-start: 3;
-    grid-column-end: 11;
-    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
     grid-row-end: 6;
     justify-self: center;
     align-self: center;
@@ -397,16 +416,30 @@ body{
     background-color: white;
 }
 
+#myName{
+
+}
+
+@media screen and (min-width: 1200px){
+    #intro h1{
+        font-size: 48px;
+    }
+}
+
 @media screen and (max-width: 800px){
-    .header {
-        grid-column-start: 5;
-        grid-column-end: 9;
+    .greeting {
+        grid-column-start: 2;
+        grid-column-end: 10;
         grid-row-start: 1;
         grid-row-end: 6;
         justify-self: center;
         align-self: start;
         z-index: 0;
         text-align: right;
+    }
+
+    .greeting h1{
+        font-size: 13vw;
     }
     #playPic{
         grid-column-start: 4;
@@ -532,8 +565,8 @@ body{
 .section-exp{
     padding-top: 1px;
     height: 100vh;
-    background-image: url("images/noise.png"),linear-gradient(-183deg, rgb(233, 149, 1) 0%, rgb(249, 207, 3) 100%);
-    cursor: url("images/cursor2.png"), auto;
+    background-image: url("../images/noise.png"),linear-gradient(-183deg, rgb(233, 149, 1) 0%, rgb(249, 207, 3) 100%);
+    cursor: url("../images/cursor2.png"), auto;
     -webkit-animation: Static .06s linear infinite;
 	-moz-animation: Static 0.06s linear infinite;
     animation: Static 0.06s linear infinite;
@@ -552,7 +585,7 @@ body{
     grid-column-start: 2;
     grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
 }
 
 .exp-header h1{
@@ -569,28 +602,31 @@ body{
 }
 
 
-
 .carousel {
-    background: #EEE;
-    height: 70vh;
+    height: 100%;
   }
   
-  .carousel-cell {
-    width: 80%;
+.carousel-cell {
+    width: 70%;
     height: 80%;
     margin-right: 10px;
     background: rgb(255, 255, 255);
     border-radius: 5px;
     counter-increment: carousel-cell;
+    transition: height 1s;
+    transition: bottom 1s;
+    bottom: 10%;
   }
-  
-  @media screen and ( min-width: 768px ) {
-    /* half-width cells for larger devices */
-    .carousel-cell { width: 80%; }
-  }
-  
-  /* cell number */
-  .carousel-cell:before {
+
+.carousel-cell.is-selected{
+    height: 100%;
+    transition: height 1s;
+    bottom: 0;
+    transition: bottom 1s;
+}
+
+/* cell number */
+.carousel-cell:before {
     display: block;
     text-align: center;
     content: counter(carousel-cell);
@@ -599,10 +635,7 @@ body{
     color: white;
   }
 
-.carousel-cell.is-selected{
-    background: #137de0;
-    height: 100%;
-}
+
 
 
 
@@ -613,7 +646,7 @@ body{
 .section-pro{
     height: 100vh;
     background-color: #28d463;
-    background-image: url("images/graph.png");
+    background-image: url("../images/graph.png");
     height: 100vh;
     background-attachment: fixed;
 }
@@ -622,8 +655,8 @@ body{
 /* Contact Section*/
 .section-connect{
     background: rgb(25, 132, 233);
-    background-image: url("images/geo.png");
-    background-image: url("images/geo.png"), linear-gradient(245deg, rgba(25,132,233,1) 0%, rgb(10, 113, 247) 100%);
+    background-image: url("../images/geo.png");
+    background-image: url("../images/geo.png"), linear-gradient(245deg, rgba(25,132,233,1) 0%, rgb(10, 113, 247) 100%);
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */

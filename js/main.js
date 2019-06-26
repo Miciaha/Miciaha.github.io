@@ -5,9 +5,14 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#hello-text").fadeIn(1000);
     },500);
+   // setTimeout(function(){
+   //     $("#hello-text").fadeOut(1000);
+   // },500);
+
+    
     setTimeout(function(){
         $("#me").fadeIn(500);
-    },1000);
+        },1000);
 
     var descriptions = document.getElementsByClassName("words");
     var i =0;
@@ -16,6 +21,8 @@ $(document).ready(function(){
             setTimeout(function(){
                 var word = descriptions[i];
                 console.log(word);
+                $(word).addClass('animated');
+                $(word).addClass('slideInUp');
                 $(word).fadeIn(800);
 
                 if(i < descriptions.length){
@@ -26,9 +33,12 @@ $(document).ready(function(){
                     $("#hello").fadeIn(900);
                     $(".bwords").fadeIn(900);
                     $("#hello-text").fadeOut(900);
+                    $("#name-text").fadeIn(900);
                     $("#Miciaha").fadeIn(900);
+                    $("#aboutSection").fadeIn(1000);
                     setTimeout(function(){
                         $("#mePicture").fadeIn(1000);
+                        $(".menu").fadeIn(500);
                     },1000);
                 }
                 
@@ -51,16 +61,16 @@ $(document).ready(function(){
         }
     });
 
-    $('selector').flickity()
+    var elem = document.querySelector('.main-carousel');
 
-    $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-      });
+    var flkty = new Flickity( elem, {
+        cellAlign: 'center',
+        wrapAround: true,
+        setGallerySize: false,
+        
+    });
 
 });
-
 
 
 
