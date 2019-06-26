@@ -2,21 +2,64 @@ $(document).ready(function(){
     console.log("ready");
 
 
-    $("#hello").fadeIn(1000);
-    $(".words").fadeIn(1000);
-    $(".bwords").fadeIn(3000).delay(800);
+    setTimeout(function(){
+        $("#hello-text").fadeIn(1000);
+    },500);
+    setTimeout(function(){
+        $("#me").fadeIn(500);
+    },1000);
+
+    var descriptions = document.getElementsByClassName("words");
+    var i =0;
+
+        function RollScript(){
+            setTimeout(function(){
+                var word = descriptions[i];
+                console.log(word);
+                $(word).fadeIn(800);
+
+                if(i < descriptions.length){
+                    $(word).fadeOut(1000);
+                    setTimeout(RollScript(),300);
+                } else{
+                    $(".words").fadeIn(900);
+                    $("#hello").fadeIn(900);
+                    $(".bwords").fadeIn(900);
+                    $("#hello-text").fadeOut(900);
+                    $("#Miciaha").fadeIn(900);
+                    setTimeout(function(){
+                        $("#mePicture").fadeIn(1000);
+                    },1000);
+                }
+                
+                i++;
+            }, 2000)
+        }
+    RollScript();    
+
+    setTimeout(function(){
+
+    },1000);
+
+    $(document).on("scroll", function(){
+        var pageTop = $(document).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var tags = $(".experience");
+    
+        if($(tags).position().top < pageBottom){
+            $(tags).addClass("visible");
+        }
+    });
+
+    $('selector').flickity()
+
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });
 
 });
-
-$(document).on("scroll", function(){
-    var pageTop = $(document).scrollTop();
-    var pageBottom = pageTop + $(window).height();
-    var tags = $(".experience");
-
-    if($(tags).position().top < pageBottom){
-        $(tags).addClass("visible");
-    }
-})
 
 
 

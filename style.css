@@ -3,13 +3,14 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
 }
 
 /* <!-- Menu Items --> */
 
 .menu{
+    display: none;
     overflow: hidden;
     top: 0;
     width: 100%;
@@ -35,18 +36,18 @@ body{
 }
 
 .menu-nav{
-    text-align: right;
+    text-align: center;
     position: relative;
 }
 
 .menu-nav a.active{
-    color: #fff;
+    display: none;
 }
 
 .menu .icon{
     display: none;
 }
-
+/*
 @media screen and (max-width: 800px){
     .menu-nav a:not(:last-child){
         display: none;}
@@ -59,6 +60,7 @@ body{
     }
     .menu-nav{ 
         padding-top: 15px;
+        opacity: 1;
     }
 
     .menu.responsive {
@@ -69,11 +71,17 @@ body{
     }
 }
 
-
+*/
 /* <!-- Fancy Media Queries just for Menu --> */
-@media screen and (max-width: 800px){
-    .menu-nav.responsive {position: relative;
-    background-color: rgba(0, 0, 0, 0.85);}
+/* @media screen and (max-width: 800px){
+    .menu-nav.responsive {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.85);
+        height: 180px;
+        transition: height 2s;
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
     .menu-nav.responsive .icon{
         position: absolute;
         right: 0;
@@ -85,10 +93,10 @@ body{
         text-align: center;
         animation: fadein 2s;
         -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari and Chrome */
-        -o-animation: fadein 2s; /* Opera */
-    }
-}
+       /* -webkit-animation: fadein 2s; /* Safari and Chrome */
+       /* -o-animation: fadein 2s; /* Opera */
+   /* }
+} */
 
 /*<!-- Animation --> */
 
@@ -162,6 +170,24 @@ body{
 .myPic img{
     width: 100%;
     max-width: 425px;
+}
+
+.header{
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
+    z-index: 0;
+    text-align: right;
+}
+
+.header h1{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16vw;
+    color: #1515157d;
 }
 
 
@@ -276,11 +302,12 @@ body{
 }
 
 #intro h1{
-    font-size:4.8vw;
+    font-size:4.5vw;
     color: white;
     text-shadow: -7px 5px 6px hsla(0, 0%, 0%, 0.7);
-    position: absolute;
     z-index: 2;
+    line-height: 1.5em;
+    transition: all 2s;
 }
 
 #playPic{
@@ -295,10 +322,13 @@ body{
 #intro{
     grid-column-start:2;
     grid-column-end:10;
-    grid-row-start:4;
-    grid-row-end:6;
+    grid-row-start:7;
+    grid-row-end:7;
     justify-content: center;
     align-self: center;
+    position: sticky;
+    z-index: 5;
+    transition: all 2s;
 }
 
 .bwords{
@@ -307,9 +337,9 @@ body{
 
 .words{
     display: none;
-    text-shadow:none;
-    background-color: white;
-    box-shadow: -5px 5px 0px 0px;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .words:hover{
@@ -335,16 +365,28 @@ body{
 }
 #hello{
     display: none;
-    background-color: rgb(255, 255, 255);
-    text-shadow: none;
-    color: #0081f9;
+    color: #fff;
 }
-#name{
-    width: 24%;
-    position: relative;
+#mePicture{
+    display: none;
     z-index: 1;
-    left: 153px;
-    bottom: 87px;
+    width: 36%;
+    position:sticky;
+}
+
+#picture{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    justify-self: center;
+    align-self: center;
+}
+
+#misfit{
+    text-decoration: underline; 
+    text-decoration-color: #ff7d21;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #aboutMe{
@@ -356,6 +398,16 @@ body{
 }
 
 @media screen and (max-width: 800px){
+    .header {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        justify-self: center;
+        align-self: start;
+        z-index: 0;
+        text-align: right;
+    }
     #playPic{
         grid-column-start: 4;
         grid-column-end: 8;
@@ -365,22 +417,30 @@ body{
     #intro{
         grid-column-start: 2;
         grid-column-end: 10;
-        grid-row-start: 3;
-        grid-row-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 10;
     }
     #intro h1{
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
-    #name{
+    #mePicture{
+        display: none;
         width: 50%;
-        position: relative;
         z-index: 1;
-        left: 80px;
-        bottom: 89px;
 
+    }
+
+    #picture {
+        grid-column-start: 3;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        justify-self: center;
+        align-self: center;
     }
 }
+
 
 /*BACKGROUND ANIMATION FOR HOME*/
 
@@ -463,10 +523,16 @@ body{
 
 
 /* Experience Section*/
+.experience{
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10,10vh);
+}
+
 .section-exp{
     padding-top: 1px;
     height: 100vh;
-    background-image: url("images/noise_exp2.png");
+    background-image: url("images/noise.png"),linear-gradient(-183deg, rgb(233, 149, 1) 0%, rgb(249, 207, 3) 100%);
     cursor: url("images/cursor2.png"), auto;
     -webkit-animation: Static .06s linear infinite;
 	-moz-animation: Static 0.06s linear infinite;
@@ -481,6 +547,66 @@ body{
 .experience.visible{
     opacity: 1;
 }
+
+.exp-header{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.exp-header h1{
+    text-align: center;
+    font-size: 10vw;
+    color: #00000066
+}
+
+.exp-content{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 10;
+}
+
+
+
+.carousel {
+    background: #EEE;
+    height: 70vh;
+  }
+  
+  .carousel-cell {
+    width: 80%;
+    height: 80%;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .carousel-cell { width: 80%; }
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+.carousel-cell.is-selected{
+    background: #137de0;
+    height: 100%;
+}
+
+
+
+
 
 
 /* Projects Section*/
@@ -508,4 +634,3 @@ body{
     height: 100vh;
     background-attachment: fixed;
 }
-
