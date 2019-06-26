@@ -2,12 +2,18 @@
 <head>
     <title>Miciaha's Site</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e9949b22b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
     <div id="mainMenu" class="menu">
+        <div class="logo"></div>
         <div class="menu-nav" id="nav">
             <a class="active" href="#home">Home</a>
             <a href="#experience">Experience</a>
@@ -18,37 +24,39 @@
             </a>
         </div>
     </div>
-    <div id="home" class="section-home business">
+    <div id="home" class="section-home real">
         <div class="home">
-            <div id="intro" class="intro business">
-                <h1>Hello, my name is <span style="color: #2b8fec; background-color:#fff; text-shadow: none;">Miciaha</span></h1>
+            <div class="header"><h1 id="hello-text">Hello</h1><h1 id="Miciaha">Miciaha Ivey</h1></div>
+            <div id="intro">
+                <h1><span id="me" class="bwords">I am </span><span id="hello" style="text-decoration-color: #da1414">Miciaha Ivey</span><span class="bwords">, </span><span class="words" style="text-decoration-color: #d500ff">a Software Developer</span> <span class="bwords">seeking opportunities to grow in </span><span class="words" style="text-decoration-color: #2eb2ff;">a creative</span><span class="bwords"> environment.
+                    I am</span> <span class="words" style="text-decoration-color: #00ff1c;">a passionate problem solver</span><span class="bwords"> with a wide array of experience. My ideal work space is </span><span class="words tech" style="text-decoration-color: #feff00">forward thinking</span><span class="bwords"> and fosters a </span><span class="bwords" id="misfit">growth mindset.</span></h1>
             </div>
-            <div id="playPic" class="myPic">
-                <img src="images/me.png">
-            </div>
-            <div class="myPic business">
-                <img src="images/business.jpeg">
-            </div>
-            <div class="aboutMe">
-                <h1 id="business">I enjoy combining my passion for people and my broad technical skillset to find problems and create solutions.</h1>
-            </div>
-            <div id="color" class="specialButton">
-                <a href="javascript:void(0);" onclick="changeTheme()">
-                    <div class="buttonShape"></div>
-                </a>
-            </div> 
+            <div id="picture"><img id="mePicture" src="images/play.jpeg"></div>
         </div>
 
     </div>
-    <div id="experience" class="section-exp">
-
+    <div id="experience" class="section-exp experience">
+        <div class="exp-header"><h1>E X P E R I E N C E</h1></div>
+        <div class="exp-content">    
+            <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain":true, "initialIndex": ".is-initial-select"'>
+                        <div class="carousel-cell">...</div>
+                        <div class="carousel-cell">...</div>
+                        <div class="carousel-cell is-initial-select">...</div>
+                        <div class="carousel-cell">...</div>
+                        <div class="carousel-cell">...</div>
+                        ...
+            </div>
+        </div>
     </div>
-    <div id="projects" class="section-pro">
+    <div id="projects" class="section-pro ">
         
         </div>
-    <div id="contact" class="section-connect">
+    <div id="contact" class="section-connect ">
 
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/parallax.js-1.5.0/parallax.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
-    <script type="text/javascript" src="main.js"></script>
 </body>
