@@ -1,0 +1,63 @@
+.card{
+    width: 45%;
+    height: 45vh;
+    min-width: 280px;
+    padding-left: 1%;
+
+    .content{
+        background-color: $white;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 34% 66%;
+        grid-template-rows: 34% 66%;
+
+        .expImage{
+            align-self: center;
+            justify-self: center;
+
+            img{
+                width: 80%;
+            }
+        }
+
+        .expName{
+            text-align: center;
+        }
+    }
+
+    
+}
+
+.selected{
+    height: 90%;
+    z-index: 3;
+
+    .content{
+        box-shadow: 1px 5px 5px #3a3634;
+
+        .expImage{
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.next{
+    height: 80%;
+    z-index: 2;
+    margin-left: -4vw;
+    margin-right: -4vw;
+
+    .content{
+        box-shadow: 1px 5px 5px #3a3634;
+
+        .expImage{
+
+            img{
+                width: 90%;
+            }
+        }
+    }
+}

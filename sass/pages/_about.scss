@@ -1,0 +1,163 @@
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10,10vh);
+    
+}
+.aboutMe h1{
+    font-size: 2vw;
+}
+.myPic img{
+    width: 100%;
+    max-width: 425px;
+}
+
+.aboutMe-title{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    z-index: 0;
+
+    h1{
+        display: none;
+        font-family: 'Roboto', sans-serif; 
+        writing-mode: vertical-lr;
+        text-orientation: mixed; 
+        font-size: 10vw;
+        color: $deep-purple;
+    }
+
+}
+
+.greeting{
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
+    z-index: 0;
+    text-align: right;
+}
+
+.greeting h1{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16vw;
+    color: #4747477d;
+    text-align: center;
+}
+
+/*Real Landing Page*/
+.real{
+    background: $white;
+    background-image: url("../images/geo.png"), url("http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=9&opacity=19");
+    @include animation(fadein 2s, patdance 10s  alternate ease-in-out infinite);
+    background-attachment: fixed;
+}
+
+#intro h1{
+    font-size:4.5vw;
+    color: $black;
+    z-index: 2;
+    line-height: 1.5em;
+    transition: all 2s;
+
+    #rainbow{
+        @include animation(rainbow 10s alternate ease-in-out infinite);
+    }
+    @include for-desktop-up{
+            font-size: 52px;
+    }
+
+    @include for-phone-only{
+        font-size: 6.5vw;
+    }
+}
+
+#playPic{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
+}
+
+#intro{
+    grid-column-start:2;
+    grid-column-end:10;
+    grid-row-start:3;
+    grid-row-end:7;
+    position: sticky;
+    z-index: 5;
+    transition: all 2s;
+    display:none;
+}
+
+.bwords{
+    display: none;
+}
+
+.words{
+    display: none;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.words:hover{
+   color: white;
+   box-shadow: none;
+}
+
+#playPic img{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    max-width: 330px;
+    
+}
+
+#pic{
+    position: relative;
+    width:175px;
+    background-image: url("../images/play.jpeg");
+    top: -61px;
+    left: 62px;
+}
+#hello{
+    display: none;
+    color: #fff;
+}
+#name-text{
+    display: none;
+}
+
+#mePicture{
+    display: none;
+    z-index: 1;
+    width: 60%;
+    position:sticky;
+}
+
+#picture{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    justify-self: center;
+    align-self: center;
+}
+
+#aboutMe{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    background-color: white;
+}
+

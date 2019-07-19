@@ -6,47 +6,61 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#hello-text").fadeIn(1000);
     },500);
+    setTimeout(function(){
+        $("#hello-text").fadeOut(1000);
+    },500);
    // setTimeout(function(){
    //     $("#hello-text").fadeOut(1000);
    // },500);
 
+   setTimeout(function(){
+       $("nav").fadeIn(0);
+   }, 2000);
+
+   setTimeout(function(){
+    $(".section-card").fadeIn(0);
+}, 2000);
     
     setTimeout(function(){
-        $("#me").fadeIn(500);
-        },1000);
+        $("#about-image-effect").fadeIn(0);
+    },3000);
 
-    var descriptions = document.getElementsByClassName("words");
-    var i =0;
+    setTimeout(function(){
+        $("#intro").fadeIn(2000)
+    },4000);
 
-        function RollScript(){
-            setTimeout(function(){
-                var word = descriptions[i];
-                console.log(word);
-                $(word).addClass('animated');
-                $(word).addClass('slideInUp');
-                $(word).fadeIn(800);
+    // var descriptions = document.getElementsByClassName("words");
+    // var i =0;
 
-                if(i < descriptions.length){
-                    $(word).fadeOut(1000);
-                    setTimeout(RollScript(),300);
-                } else{
-                    $(".words").fadeIn(900);
-                    $("#hello").fadeIn(900);
-                    $(".bwords").fadeIn(900);
-                    $("#hello-text").fadeOut(900);
-                    $("#name-text").fadeIn(900);
-                    $("#Miciaha").fadeIn(900);
-                    $("#aboutSection").fadeIn(1000);
-                    setTimeout(function(){
-                        $("#mePicture").fadeIn(1000);
-                        $(".menu").fadeIn(500);
-                    },1000);
-                }
+    //     function RollScript(){
+    //         setTimeout(function(){
+    //             var word = descriptions[i];
+    //             console.log(word);
+    //             $(word).addClass('animated');
+    //             $(word).addClass('slideInUp');
+    //             $(word).fadeIn(800);
+
+    //             if(i < descriptions.length){
+    //                 $(word).fadeOut(1000);
+    //                 setTimeout(RollScript(),300);
+    //             } else{
+    //                 $(".words").fadeIn(900);
+    //                 $("#hello").fadeIn(900);
+    //                 $(".bwords").fadeIn(900);
+    //                 $("#hello-text").fadeOut(900);
+    //                 $("#name-text").fadeIn(900);
+    //                 $("#Miciaha").fadeIn(900);
+    //                 $("#aboutSection").fadeIn(1000);
+    //                 setTimeout(function(){
+    //                     $("#mePicture").fadeIn(1000);
+    //                     $(".menu").fadeIn(500);
+    //                 },1000);
+    //             }
                 
-                i++;
-            }, 2000)
-        }
-    RollScript();    
+    //             i++;
+    //         }, 2000)
+    //     }
+    // RollScript();    
 
     setTimeout(function(){
 
@@ -64,16 +78,8 @@ $(document).ready(function(){
 
     var elem = document.querySelector('.main-carousel');
 
-    var flkty = new Flickity( elem, {
-        cellAlign: 'center',
-        wrapAround: true,
-        setGallerySize: false,
-        
-    });
 
 });
-
-
 
 
 function mobileMenu(){
@@ -101,4 +107,3 @@ function mobileMenu(){
     cont.className="section-connect";
 }
 */
-var rellax = new Rellax('.rellax');
