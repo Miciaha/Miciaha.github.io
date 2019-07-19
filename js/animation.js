@@ -17,14 +17,12 @@ new ScrollMagic.Scene({
                 triggerElement: "#experience"
 })
 .setTween(navTween)
-.addIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#experience"
 })
 .setTween(expNav)
-.addIndicators()
 .addTo(controller);
 
 
@@ -39,14 +37,12 @@ new ScrollMagic.Scene({
                 triggerElement: "#experience"
 })
 .setTween(aboutImage)
-.addIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#experience"
 })
 .setTween(aboutTitle)
-.addIndicators()
 .addTo(controller);
 
 
@@ -63,7 +59,6 @@ new ScrollMagic.Scene({
     triggerElement: "#experience"
 })
 .setTween(cardExpContent)
-.addIndicators()
 .addTo(controller);
 
 
