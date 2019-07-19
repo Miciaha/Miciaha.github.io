@@ -1,0 +1,25 @@
+/* BASE - Holds variables, mixins, and placeholder info
+===========================================================*/
+
+@import 'base/_mixins.scss';
+@import 'base/_variables.scss';
+@import 'base/_animations.scss';
+
+/* COMPONENTS 
+==========================================================*/
+@import 'components/_carousel.scss';
+@import 'components/_card.scss';
+
+
+/*LAYOUT
+=======================================*/
+@import 'layout/_menu.scss';
+@import 'layout/_section-card.scss';
+
+
+/*PAGES - Individual layout of the website sections
+===============================================================*/
+@import 'pages/_about.scss';
+@import 'pages/_contact.scss';
+@import 'pages/_experience.scss';
+@import 'pages/_projects.scss';

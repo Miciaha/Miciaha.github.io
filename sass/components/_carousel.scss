@@ -1,0 +1,33 @@
+
+.carousel {
+    height: 100%;
+  }
+  
+.carousel-cell {
+    width: 70%;
+    height: 80%;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    transition: height 1s;
+    transition: bottom 1s;
+    bottom: 10%;
+  }
+
+.carousel-cell.is-selected{
+    height: 100%;
+    transition: height 1s;
+    bottom: 0;
+    transition: bottom 1s;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }

@@ -1,0 +1,14 @@
+@import 'global.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-primary;
+    margin: 0;
+}
+
+.section{
+    height: 100vh;
+}

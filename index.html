@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
     <title>Miciaha's Site</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flickity.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="css/vendor/flickity.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e9949b22b.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -14,53 +14,112 @@
 </head>
 <body>
 
-    <div id="mainMenu" class="menu">
-        <div class="logo"></div>
-        <div class="menu-nav" id="nav">
+    <div class="logo animated fadeIn">
+        <a href="#home" id="logo"><img src="images/logo.svg"></a>
+    </div>
+    <div id="navigation-bar">
+        <nav class="animated slideInLeft">
+                <div>
+                    <ul id="menu">
+                        <li><a class="menuItem expMenu" href="#experience">Experience</a></li>
+                        <li><a class="menuItem proMenu" href="#projects">Projects</a></li>
+                        <li><a class="menuItem" href="https://www.linkedin.com/in/miciaha/" target="_blank"><i class="fab fa-linkedin"></i></a></i></li>
+                        <li><a class="menuItem" href="https://github.com/Miciaha" target="_blank"><i class="fab fa-github"></i></a></i></li>
+                        <li><a class="menuItem" href="https://twitter.com/MiciahaIV" target="_blank"><i class="fab fa-twitter"></i></a></i></li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="section-card animated slideInRight">
+        <div class="about">
+            <div class="about-title">
+                <h1>Hi, I'm Miciaha Ivey</h1>
+            </div>
+            <div class="about-image">
+                <img id="about-image-effect" class="animated slideInUp" src="images/me.png">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="description"></div>
         </div>
     </div>
-    <div id="home" class="section-home real">
+    <div id="home" class="section real scrollify">
         <div class="home">
             <div class="greeting">
-                <h1 id="hello-text" class="animated slideInUp">Hello</h1>
-                <h1 id="name-text" class="animated zoomInDown rellax" data-rellax-speed="-4">Miciaha Ivey</h1>
+                <h1 id="hello-text" class="animated slideInUp">Hello!</h1>
+            </div>      
+            <div id="intro" class="animated fadeIn">
+                <h1>I am a <span id="rainbow">Software Developer </span>with a focus on the <span id="rainbow">human</span> parts of our industry. I look forward to joining a team of <span id="rainbow">forward thinking</span>, <span id="rainbow">growth minded </span>individuals.</h1> 
             </div>
-            <div class="aboutMe-title">
-                <h1 id="aboutSection" class="animated fadeInRight rellax" data-rellax-speed="0">A B O U T</h1>
-            </div>        
-            <div id="intro">
-                <h1><span id="me" class="bwords">I am </span><span class="words" style="text-decoration-color: #d500ff">a Software Developer</span> <span class="bwords">seeking to grow in </span><span class="words" style="text-decoration-color: #2eb2ff;">a creative</span><span class="bwords"> environment.
-                    I am</span> <span class="words" style="text-decoration-color: #00ff1c;">a passionate problem solver</span><span class="bwords"> with a wide array of experience. My ideal work space is </span><span class="words tech" style="text-decoration-color: #feff00">forward thinking</span><span class="bwords"> and fosters a </span><span class="bwords" id="misfit">growth mindset.</span></h1>
-            </div>
-            <div id="picture">
-                <img id="mePicture" class="animated zoomIn rellax" data-rellax-speed="-5" src="images/play.jpeg">
-        </div>
+            
         </div>
 
     </div>
-    <div id="experience" class="section-exp experience">
+    <div id="experience" class="section-exp experience scrollify">
         <div class="exp-header"><h1>E X P E R I E N C E</h1></div>
         <div class="exp-content">    
-            <div class="main-carousel carousel">
-                        <div class="carousel-cell">...</div>
-                        <div class="carousel-cell">...</div>
-                        <div class="carousel-cell is-initial-select">...</div>
-                        <div class="carousel-cell">...</div>
-                        <div class="carousel-cell">...</div>
-                        ...
+            <div class="card-holder">
+            <div class="card selected">
+                <div class="content">
+                    <div class="expImage"><img src="https://via.placeholder.com/150"></div>
+                    <div class="expName">
+                            <h1>Position Name</h1>
+                            <h2>My role</h2>
+                        </div>
+                    <div class="expInfo"><p>Lorem ipsum text</p></div>
+                    <div class="expSkills"><p>Skillful Lorem ipsum text</p></div>
+                </div>
             </div>
+            <div class="card next">
+                <div class="content">
+                        <div class="expImage"><img src="https://via.placeholder.com/150"></div>
+                        <div class="expName">
+                                <h1>Position Name</h1>
+                                <h2>My role</h2>
+                            </div>
+                        <div class="expInfo"><p>Lorem ipsum text</p></div>
+                        <div class="expSkills"><p>Skillful Lorem ipsum text</p></div>
+                </div>
+            </div>
+            <div class="card"><div class="content">
+                    <div class="expImage"><img src="https://via.placeholder.com/150"></div>
+                    <div class="expName">
+                            <h1>Position Name</h1>
+                            <h2>My role</h2>
+                        </div>
+                    <div class="expInfo"><p>Lorem ipsum text</p></div>
+                    <div class="expSkills"><p>Skillful Lorem ipsum text</p></div>
+                </div></div>
+            <div class="card"><div class="content">
+                    <div class="expImage"><img src="https://via.placeholder.com/150"></div>
+                    <div class="expName">
+                            <h1>Position Name</h1>
+                            <h2>My role</h2>
+                        </div>
+                    <div class="expInfo"><p>Lorem ipsum text</p></div>
+                    <div class="expSkills"><p>Skillful Lorem ipsum text</p></div>
+                </div></div>
+                </div>
         </div>
     </div>
-    <div id="projects" class="section-pro ">
+     <!-- <div id="projects" class="section-pro scrollify">
         
-        </div>
-    <div id="contact" class="section-connect ">
+    </div>
+    <div id="contact" class="section-connect scrollify"> -->
 
     </div>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="https://use.fontawesome.com/2f4d089e51.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/animation.gsap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
     <script src="js/parallax.js-1.5.0/parallax.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="https://unpkg.com/scrollbooster@1.1.0/dist/scrollbooster.min.js"></script>
+    <script src="js/scrolling.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
     
 </body>
