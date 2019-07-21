@@ -4,6 +4,12 @@
     min-width: 280px;
     padding-left: 1%;
 
+    transition: all 1s ease-in-out;
+
+    @include for-phone-only{
+        width: 25%;
+    }
+
     .content{
         background-color: $white;
         height: 100%;
@@ -31,6 +37,7 @@
 .selected{
     height: 90%;
     z-index: 3;
+    transition: all 2s;
 
     .content{
         box-shadow: 1px 5px 5px #3a3634;
@@ -49,6 +56,7 @@
     z-index: 2;
     margin-left: -4vw;
     margin-right: -4vw;
+    transition: all 1s;
 
     .content{
         box-shadow: 1px 5px 5px #3a3634;
@@ -60,4 +68,9 @@
             }
         }
     }
+}
+
+.phantom{
+    opacity: 0;
+    width: 10%;
 }

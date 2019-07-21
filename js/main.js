@@ -9,9 +9,6 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#hello-text").fadeOut(1000);
     },500);
-   // setTimeout(function(){
-   //     $("#hello-text").fadeOut(1000);
-   // },500);
 
    setTimeout(function(){
        $("nav").fadeIn(0);
@@ -27,40 +24,7 @@ $(document).ready(function(){
 
     setTimeout(function(){
         $("#intro").fadeIn(2000)
-    },4000);
-
-    // var descriptions = document.getElementsByClassName("words");
-    // var i =0;
-
-    //     function RollScript(){
-    //         setTimeout(function(){
-    //             var word = descriptions[i];
-    //             console.log(word);
-    //             $(word).addClass('animated');
-    //             $(word).addClass('slideInUp');
-    //             $(word).fadeIn(800);
-
-    //             if(i < descriptions.length){
-    //                 $(word).fadeOut(1000);
-    //                 setTimeout(RollScript(),300);
-    //             } else{
-    //                 $(".words").fadeIn(900);
-    //                 $("#hello").fadeIn(900);
-    //                 $(".bwords").fadeIn(900);
-    //                 $("#hello-text").fadeOut(900);
-    //                 $("#name-text").fadeIn(900);
-    //                 $("#Miciaha").fadeIn(900);
-    //                 $("#aboutSection").fadeIn(1000);
-    //                 setTimeout(function(){
-    //                     $("#mePicture").fadeIn(1000);
-    //                     $(".menu").fadeIn(500);
-    //                 },1000);
-    //             }
-                
-    //             i++;
-    //         }, 2000)
-    //     }
-    // RollScript();    
+    },4000);   
 
     setTimeout(function(){
 
@@ -93,17 +57,3 @@ function mobileMenu(){
         menu.className="menu";
     }
 }
-
-/*function changeTheme(){
-    $("#business-home").fadeOut();
-    $("#home").fadeIn()
-
-    var exp = document.getElementById("experience");
-    var pro = document.getElementById("projects");
-    var cont = document.getElementById("contact");
-
-    exp.className ="section-exp";
-    pro.className ="section-pro";
-    cont.className="section-connect";
-}
-*/

@@ -9,7 +9,7 @@
 
 .section-exp{
     padding-top: 1px;
-    height: 100vh;
+    height: 100vh !important;
     background-image: url("../images/noise.png"),linear-gradient(-183deg, rgb(233, 149, 1) 0%, rgb(249, 207, 3) 100%);
     @include animation(fuzz 0.1s  infinite);
 }
@@ -46,9 +46,9 @@
     flex-wrap: nowrap;
     position: relative;
     align-items: center;
-    top: 25%;
+    top: 22%;
     overflow-x: auto;
-    height: 80vh;
+    height: 75vh;
 
     .card{
         flex: 0 0 auto;
@@ -66,4 +66,8 @@
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
+    padding-left: 30%;
+    @include for-phone-only{
+        padding-left: 0%;
+    }
 }
