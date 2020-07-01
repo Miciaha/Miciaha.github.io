@@ -30,21 +30,21 @@ var controller = new ScrollMagic.Controller();
 /*SECTION CARD TWEENS
 ============================================================*/
 
-var aboutImage = TweenMax.to(".about-image", 0.5, {bottom: "-300px", opacity: "0", display:"none"});
-var aboutTitle = TweenMax.to(".about-title", 0.5, {bottom: "-300px", opacity: "0", display:"none"});
+// var aboutImage = TweenMax.to(".about-image", 0.5, {bottom: "-300px", opacity: "0", display:"none"});
+// var aboutTitle = TweenMax.to(".about-title", 0.5, {bottom: "-300px", opacity: "0", display:"none"});
 
 
-new ScrollMagic.Scene({
-                triggerElement: "#experience"
-})
-.setTween(aboutImage)
-.addTo(controller);
+// new ScrollMagic.Scene({
+//                 triggerElement: "#experience"
+// })
+// .setTween(aboutImage)
+// .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: "#experience"
-})
-.setTween(aboutTitle)
-.addTo(controller);
+// new ScrollMagic.Scene({
+//     triggerElement: "#experience"
+// })
+// .setTween(aboutTitle)
+// .addTo(controller);
 
 
 var cardExperience = TweenMax.to(".section-card", 0.5, {bottom:"5%", right:"10%",height:"50px", width:"50px", borderRadius:"50%"});
