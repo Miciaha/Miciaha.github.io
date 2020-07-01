@@ -11,19 +11,20 @@ var controller = new ScrollMagic.Controller();
 
 /* MENU TWEENS
 ============================================================*/
-var navTween = TweenMax.to("nav", 0.5, {right: "0", backgroundColor: "transparent"});
-var expNav = TweenMax.to(".expMenu", 0.2, {opacity:"0", display:"none"})
-new ScrollMagic.Scene({
-                triggerElement: "#experience"
-})
-.setTween(navTween)
-.addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: "#experience"
-})
-.setTween(expNav)
-.addTo(controller);
+// var navTween = TweenMax.to("nav", 0.5, {right: "0", backgroundColor: "transparent"});
+// var expNav = TweenMax.to(".expMenu", 0.2, {opacity:"0", display:"none"})
+// new ScrollMagic.Scene({
+//                 triggerElement: "#experience"
+// })
+// .setTween(navTween)
+// .addTo(controller);
+
+// new ScrollMagic.Scene({
+//     triggerElement: "#experience"
+// })
+// .setTween(expNav)
+// .addTo(controller);
 
 
 /*SECTION CARD TWEENS
