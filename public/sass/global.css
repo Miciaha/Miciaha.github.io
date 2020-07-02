@@ -1,0 +1,677 @@
+/* BASE - Holds variables, mixins, and placeholder info
+===========================================================*/
+/* MEDIA QUERIES - Mixins for media queries
+=====================================================*/
+/* Animation Mixin
+=======================================*/
+/*Global colors for website*/
+/* FADE IN */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* FADE OUT*/
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*Initially named static. Adds a little texture to the projects page*/
+@-webkit-keyframes fuzz {
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fuzz {
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*Home falling effect of background image*/
+@-webkit-keyframes patdance {
+  100% {
+    background-position: 0% 30%;
+  }
+}
+
+@keyframes patdance {
+  100% {
+    background-position: 0% 30%;
+  }
+}
+
+/*Rainbow <3 :)*/
+@-webkit-keyframes rainbow {
+  0% {
+    color: #137de0;
+  }
+  20% {
+    color: #35e013;
+  }
+  40% {
+    color: #e08013;
+  }
+  60% {
+    color: #e0132e;
+  }
+  80% {
+    color: #5113e0;
+  }
+  100% {
+    color: #137de0;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: #137de0;
+  }
+  20% {
+    color: #35e013;
+  }
+  40% {
+    color: #e08013;
+  }
+  60% {
+    color: #e0132e;
+  }
+  80% {
+    color: #5113e0;
+  }
+  100% {
+    color: #137de0;
+  }
+}
+
+/* COMPONENTS 
+==========================================================*/
+.carousel {
+  height: 100%;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 80%;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  bottom: 10%;
+}
+
+.carousel-cell.is-selected {
+  height: 100%;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  bottom: 0;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.card {
+  width: 45%;
+  height: 45vh;
+  min-width: 280px;
+  padding-left: 1%;
+}
+
+.card .content {
+  background-color: #fff;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34% 66%;
+      grid-template-columns: 34% 66%;
+  -ms-grid-rows: 34% 66%;
+      grid-template-rows: 34% 66%;
+}
+
+.card .content .expImage {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.card .content .expImage img {
+  width: 80%;
+}
+
+.card .content .expName {
+  text-align: center;
+}
+
+.selected {
+  height: 90%;
+  z-index: 3;
+}
+
+.selected .content {
+  -webkit-box-shadow: 1px 5px 5px #3a3634;
+          box-shadow: 1px 5px 5px #3a3634;
+}
+
+.selected .content .expImage img {
+  width: 100%;
+}
+
+.next {
+  height: 80%;
+  z-index: 2;
+  margin-left: -4vw;
+  margin-right: -4vw;
+}
+
+.next .content {
+  -webkit-box-shadow: 1px 5px 5px #3a3634;
+          box-shadow: 1px 5px 5px #3a3634;
+}
+
+.next .content .expImage img {
+  width: 90%;
+}
+
+/*LAYOUT
+=======================================*/
+nav {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 78px;
+  width: 40vw;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 2vw;
+  top: 50%;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px;
+}
+
+nav ul li a:hover {
+  -webkit-animation: rainbow 5s reverse ease-in-out infinite;
+  animation: rainbow 5s reverse ease-in-out infinite;
+  background-color: white;
+}
+
+nav ul li #logo:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 599px) {
+  nav {
+    width: 100%;
+    height: 67px;
+  }
+  nav ul li {
+    float: left;
+    font-size: 4vw;
+  }
+  nav ul li img {
+    width: 50px;
+  }
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  float: left;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+}
+
+.section-card {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  height: 80px;
+  width: 50vw;
+  border-radius: 0;
+  background-color: #000;
+}
+
+.section-card .about {
+  position: absolute;
+  width: 100%;
+}
+
+.section-card .about-title {
+  color: white;
+}
+
+.section-card .about-title h1 {
+  padding-left: 15px;
+}
+
+.section-card .about-image {
+  width: 35%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 99;
+}
+
+.section-card .about-image img {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  .section-card {
+    width: 100%;
+    font-size: 3vw;
+  }
+}
+
+.section-card .experience {
+  display: none;
+  position: absolute !important;
+  top: 17px;
+  left: 17px;
+}
+
+.section-card .experience i {
+  color: #35e013;
+}
+
+/*PAGES - Individual layout of the website sections
+===============================================================*/
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[10];
+      grid-template-columns: repeat(10, 10vw);
+  -ms-grid-rows: (10vh)[10];
+      grid-template-rows: repeat(10, 10vh);
+}
+
+.aboutMe h1 {
+  font-size: 2vw;
+}
+
+.myPic img {
+  width: 100%;
+  max-width: 425px;
+}
+
+.aboutMe-title {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 11;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 10;
+  z-index: 0;
+}
+
+.aboutMe-title h1 {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  font-size: 10vw;
+  color: #2f009c;
+}
+
+.greeting {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 0;
+  text-align: right;
+}
+
+.greeting h1 {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16vw;
+  color: #4747477d;
+  text-align: center;
+}
+
+/*Real Landing Page*/
+.real {
+  background: #fff;
+  background-image: url("../images/geo.png"), url("http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=9&opacity=19");
+  -webkit-animation: fadein 2s, patdance 10s alternate ease-in-out infinite;
+  animation: fadein 2s, patdance 10s alternate ease-in-out infinite;
+  background-attachment: fixed;
+}
+
+#intro h1 {
+  font-size: 4.5vw;
+  color: #000;
+  z-index: 2;
+  line-height: 1.5em;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#intro h1 #rainbow {
+  -webkit-animation: rainbow 10s alternate ease-in-out infinite;
+  animation: rainbow 10s alternate ease-in-out infinite;
+}
+
+@media (min-width: 1200px) {
+  #intro h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 599px) {
+  #intro h1 {
+    font-size: 6.5vw;
+  }
+}
+
+#playPic {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#intro {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 10;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 7;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  display: none;
+}
+
+.bwords {
+  display: none;
+}
+
+.words {
+  display: none;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+}
+
+.words:hover {
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#playPic img {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  max-width: 330px;
+}
+
+#pic {
+  position: relative;
+  width: 175px;
+  background-image: url("../images/play.jpeg");
+  top: -61px;
+  left: 62px;
+}
+
+#hello {
+  display: none;
+  color: #fff;
+}
+
+#name-text {
+  display: none;
+}
+
+#mePicture {
+  display: none;
+  z-index: 1;
+  width: 60%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#picture {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#aboutMe {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 10;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 10;
+  background-color: white;
+}
+
+/* Contact Section*/
+.section-connect {
+  background: #1984e9;
+  background-image: url("../images/geo.png");
+  background-image: url("../images/geo.png"), linear-gradient(245deg, #1984e9 0%, #0a71f7 100%);
+  animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  /* Opera */
+  -webkit-animation: PatDance 10s alternate ease-in-out infinite;
+  animation: PatDance 10s alternate ease-in-out infinite;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Experience Section*/
+.experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.section-exp {
+  padding-top: 1px;
+  height: 100vh;
+  background-image: url("../images/noise.png"), linear-gradient(-183deg, #e99501 0%, #f9cf03 100%);
+  -webkit-animation: fuzz 0.1s infinite;
+  animation: fuzz 0.1s infinite;
+}
+
+.experience {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.experience.visible {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  opacity: 1;
+}
+
+.exp-header {
+  opacity: 0;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 599px) {
+  .exp-header {
+    top: 10%;
+  }
+}
+
+.exp-header h1 {
+  text-align: center;
+  font-size: 11vw;
+  color: #ffffffe8;
+}
+
+.exp-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 25%;
+  overflow-x: auto;
+  height: 80vh;
+}
+
+.exp-content .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Projects Section*/
+.section-pro {
+  height: 100vh;
+  background-color: #28d463;
+  background-image: url("../images/graph.png");
+  height: 100vh;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=global.css.map */

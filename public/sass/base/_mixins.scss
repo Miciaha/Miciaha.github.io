@@ -1,0 +1,64 @@
+/* MEDIA QUERIES - Mixins for media queries
+=====================================================*/
+
+@mixin for-phone-only{
+    @media(max-width: 599px) { @content;}
+}
+
+@mixin for-tablet-portrait-up{
+    @media(max-width: 600px) { @content;}
+}
+
+@mixin for-tablet-landscape-up{
+    @media(min-width: 900px) {@content;}
+}
+
+@mixin for-desktop-up{
+    @media(min-width: 1200px) {@content;}
+}
+
+@mixin for-big-desktop-up{
+    @media(min-width: 1800px) {@content;}
+}
+
+@mixin for-tablet-down{
+    @media(max-width: 769px) {@content;}
+}
+
+
+
+
+/* Animation Mixin
+=======================================*/
+
+@mixin animation($animate...){
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max{
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max{
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation: $animations;
+    -o-animation: $animations;
+    animation: $animations;
+}
+
+@mixin keyframes($animationName){
+    @-webkit-keyframes #{$animationName}{
+        @content;
+    }
+    @-moz-keyframes #{$animationName}{
+        @content;
+    }
+    @-o-keyframes #{$animationName}{
+        @content;
+    }
+    @keyframes #{$animationName}{
+        @content;
+    }
+}

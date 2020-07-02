@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo2.svg"
+   id="svg30"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 58 55"
+   height="55"
+   width="58">
+  <metadata
+     id="metadata36">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs34" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg30"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="28.137843"
+     inkscape:cx="9.7913595"
+     inkscape:zoom="13.363636"
+     showgrid="false"
+     id="namedview32"
+     inkscape:window-height="987"
+     inkscape:window-width="1680"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <rect
+     style="fill:#2e79ff;fill-opacity:1"
+     id="rect24"
+     stroke-width="3"
+     stroke="#ffffff"
+     height="52"
+     width="55"
+     y="1.5"
+     x="1.5" />
+  <path
+     style="fill:#ffffff"
+     id="path26"
+     fill="white"
+     d="M17.1615 10.0913L28.9876 39.3904L40.8137 10.0913H47V46H42.2298V32.0163L42.677 16.9228L30.8012 46H27.1491L15.2981 16.9968L15.7702 32.0163V46H11V10.0913H17.1615Z" />
+  <path
+     style="fill:#ffffff;stroke-width:0.864542"
+     id="path28"
+     fill="#ffffff"
+     d="M 30.692221,46 H 27.1491 V 10.3157 h 3.543121 z" />
+</svg>
