@@ -11,7 +11,7 @@ class Menu extends React.Component {
   //   var controller = new ScrollMagic.Controller();
   //   var item = "#experience";
   //   new ScrollMagic.Scene({triggerElement:item})
-  //     .setTween(navTween)
+  //     .setTween(navTween) 
   //     .addTo(controller);
 
   //   // new ScrollMagic.Scene({triggerElement: item})

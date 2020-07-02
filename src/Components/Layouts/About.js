@@ -83,8 +83,8 @@ class About extends React.Component {
                 I am a <span id="rainbow">Software Developer </span>with a focus
                 on the web. I have experience with{" "}
                 <span id="rainbow">JavaScript, C#, Python, and Java</span>. I
-                look forward to joining a{" "}
-                <span id="rainbow">forward thinking</span> team with a{" "}
+                look forward to joining an{" "}
+                <span id="rainbow">innovative</span> team with a{" "}
                 <span id="rainbow">growth minded </span>philosophy.
               </h1>
             </div>
