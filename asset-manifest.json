@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/miciaha.com/static/css/main.c2fb3c2a.chunk.css",
+    "main.js": "/miciaha.com/static/js/main.0df2a929.chunk.js",
+    "main.js.map": "/miciaha.com/static/js/main.0df2a929.chunk.js.map",
+    "runtime-main.js": "/miciaha.com/static/js/runtime-main.2857fd9b.js",
+    "runtime-main.js.map": "/miciaha.com/static/js/runtime-main.2857fd9b.js.map",
+    "static/js/2.9b7ff398.chunk.js": "/miciaha.com/static/js/2.9b7ff398.chunk.js",
+    "static/js/2.9b7ff398.chunk.js.map": "/miciaha.com/static/js/2.9b7ff398.chunk.js.map",
+    "index.html": "/miciaha.com/index.html",
+    "precache-manifest.1013c7a404766b7d17cbfe7903f4711a.js": "/miciaha.com/precache-manifest.1013c7a404766b7d17cbfe7903f4711a.js",
+    "service-worker.js": "/miciaha.com/service-worker.js",
+    "static/css/main.c2fb3c2a.chunk.css.map": "/miciaha.com/static/css/main.c2fb3c2a.chunk.css.map",
+    "static/js/2.9b7ff398.chunk.js.LICENSE.txt": "/miciaha.com/static/js/2.9b7ff398.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2857fd9b.js",
+    "static/js/2.9b7ff398.chunk.js",
+    "static/css/main.c2fb3c2a.chunk.css",
+    "static/js/main.0df2a929.chunk.js"
+  ]
+}
