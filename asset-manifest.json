@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/miciaha.github.io/miciaha.github.io/static/css/main.c2fb3c2a.chunk.css",
-    "main.js": "/miciaha.github.io/miciaha.github.io/static/js/main.e363901f.chunk.js",
-    "main.js.map": "/miciaha.github.io/miciaha.github.io/static/js/main.e363901f.chunk.js.map",
-    "runtime-main.js": "/miciaha.github.io/miciaha.github.io/static/js/runtime-main.a643de63.js",
-    "runtime-main.js.map": "/miciaha.github.io/miciaha.github.io/static/js/runtime-main.a643de63.js.map",
-    "static/js/2.9b7ff398.chunk.js": "/miciaha.github.io/miciaha.github.io/static/js/2.9b7ff398.chunk.js",
-    "static/js/2.9b7ff398.chunk.js.map": "/miciaha.github.io/miciaha.github.io/static/js/2.9b7ff398.chunk.js.map",
-    "index.html": "/miciaha.github.io/miciaha.github.io/index.html",
-    "precache-manifest.5772493a4ddcee07482a20600ed304f2.js": "/miciaha.github.io/miciaha.github.io/precache-manifest.5772493a4ddcee07482a20600ed304f2.js",
-    "service-worker.js": "/miciaha.github.io/miciaha.github.io/service-worker.js",
-    "static/css/main.c2fb3c2a.chunk.css.map": "/miciaha.github.io/miciaha.github.io/static/css/main.c2fb3c2a.chunk.css.map",
-    "static/js/2.9b7ff398.chunk.js.LICENSE.txt": "/miciaha.github.io/miciaha.github.io/static/js/2.9b7ff398.chunk.js.LICENSE.txt"
+    "main.css": "/miciaha.github.io/static/css/main.c2fb3c2a.chunk.css",
+    "main.js": "/miciaha.github.io/static/js/main.5d41a905.chunk.js",
+    "main.js.map": "/miciaha.github.io/static/js/main.5d41a905.chunk.js.map",
+    "runtime-main.js": "/miciaha.github.io/static/js/runtime-main.0eee821b.js",
+    "runtime-main.js.map": "/miciaha.github.io/static/js/runtime-main.0eee821b.js.map",
+    "static/js/2.9b7ff398.chunk.js": "/miciaha.github.io/static/js/2.9b7ff398.chunk.js",
+    "static/js/2.9b7ff398.chunk.js.map": "/miciaha.github.io/static/js/2.9b7ff398.chunk.js.map",
+    "index.html": "/miciaha.github.io/index.html",
+    "precache-manifest.73360537aba1bc330a45436f1efd8843.js": "/miciaha.github.io/precache-manifest.73360537aba1bc330a45436f1efd8843.js",
+    "service-worker.js": "/miciaha.github.io/service-worker.js",
+    "static/css/main.c2fb3c2a.chunk.css.map": "/miciaha.github.io/static/css/main.c2fb3c2a.chunk.css.map",
+    "static/js/2.9b7ff398.chunk.js.LICENSE.txt": "/miciaha.github.io/static/js/2.9b7ff398.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a643de63.js",
+    "static/js/runtime-main.0eee821b.js",
     "static/js/2.9b7ff398.chunk.js",
     "static/css/main.c2fb3c2a.chunk.css",
-    "static/js/main.e363901f.chunk.js"
+    "static/js/main.5d41a905.chunk.js"
   ]
 }
