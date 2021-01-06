@@ -5,18 +5,18 @@ import gsap from 'gsap';
 
 class Menu extends React.Component {
   componentDidMount(){
-  //  var navTween = gsap.to("nav", 0.5, {right: "0", backgroundColor: "transparent"});
-  //  //var expNav = gsap .to(".expMenu", 0.2, {opacity:"0", display:"none"})
+    var navTween = gsap.to("nav", 0.5, {right: "0", backgroundColor: "transparent"});
+    var expNav = gsap.to(".expMenu", 0.2, {opacity:"0", display:"none"})
 
-  //   var controller = new ScrollMagic.Controller();
-  //   var item = "#experience";
-  //   new ScrollMagic.Scene({triggerElement:item})
-  //     .setTween(navTween) 
-  //     .addTo(controller);
+    var controller = new ScrollMagic.Controller();
+    var item = "#experience";
+    new ScrollMagic.Scene({triggerElement:item})
+      .setTween(navTween) 
+      .addTo(controller);
 
-  //   // new ScrollMagic.Scene({triggerElement: item})
-  //   //   .setTween(expNav)
-  //   //   .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: item})
+      .setTween(expNav)
+      .addTo(controller);
   }
   render() {
     return (
@@ -30,7 +30,7 @@ class Menu extends React.Component {
           <nav class="animated slideInLeft">
             <div>
               <ul id="menu">
-                {/* <li class="menuItem expMenu">
+                 <li class="menuItem expMenu">
                   <a class="menuItem proMenu" href="#experience">
                     Experience
                   </a>
@@ -39,7 +39,7 @@ class Menu extends React.Component {
                   <a class="menuItem proMenu" href="#projects">
                     Projects
                   </a>
-                </li> */}
+                </li> 
                 <li>
                   <a
                     class="menuItem"

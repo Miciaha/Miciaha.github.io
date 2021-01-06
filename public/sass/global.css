@@ -603,7 +603,7 @@ nav ul li #logo:hover {
 }
 
 .experience {
-  opacity: 0;
+  opacity: 100;
   transition: opacity 1s;
 }
 
@@ -614,7 +614,7 @@ nav ul li #logo:hover {
 }
 
 .exp-header {
-  opacity: 0;
+  opacity: 100;
   position: absolute;
   align-self: center;
 }

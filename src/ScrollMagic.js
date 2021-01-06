@@ -43,7 +43,7 @@ ScrollMagic.Scene.extend(function () {
           } else if (state !== 'DURING' && !_tween.paused()) {
             _tween.pause();
           }
-        } else if (progress != _tween.progress()) { // do we even need to update the progress?
+        } else if (progress !== _tween.progress()) { // do we even need to update the progress?
           // no infinite loop - so should we just play or go to a specific point in time?
           if (Scene.duration() === 0) {
             // play the animation
