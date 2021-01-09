@@ -33,9 +33,8 @@ class AccentMenu extends React.Component {
         var cardExperience = gsap.to(".section-card", 0.5, {
           bottom: "5%",
           right: "10%",
-          height: "50px",
+          height: "10px",
           width: "50px",
-          borderRadius: "50%",
           backgroundColor: "white",
         });
         var cardExpContent = gsap.to(".section-card .experience", 0.5, {

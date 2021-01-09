@@ -26,8 +26,8 @@ class About extends React.Component {
             </div>            
             <div id="intro" class="animated fadeIn intro">
                 <h1>I am a <span id="rainbow">Software Developer </span>with a passion for people, problem-solving, programming, and alliteration.</h1>
-                <h3>Current Web Stack: React, NodeJS, Express, PostgreSQL, GraphQL</h3>
-                <h3>Languages: JavaScript, Python, C#, C++</h3>
+                <h3>Practicing Web Stack: React, NodeJS, Express, PostgreSQL, GraphQL</h3>
+                <h3>Languages: JavaScript, <strike>Parseltongue</strike> Python, C#, C++</h3>
                 <h3>Learning: Data Structures and Algorithms with C++</h3>
             </div> 
           </div>
