@@ -1,0 +1,15 @@
+/* Contact Section*/
+.section-connect{
+    background: rgb(25, 132, 233);
+    background-image: url("../images/geo.png");
+    background-image: url("../images/geo.png"), linear-gradient(245deg, rgba(25,132,233,1) 0%, rgb(10, 113, 247) 100%);
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    -webkit-animation: PatDance 10s alternate ease-in-out infinite;
+	-moz-animation: PatDance 10s alternate ease-in-out infinite;
+    animation: PatDance 10s alternate ease-in-out infinite;
+    height: 100vh;
+    background-attachment: fixed;
+}

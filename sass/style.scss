@@ -1,0 +1,21 @@
+@import 'global.scss';
+
+html{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;    
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    font-family: $font-primary;
+    margin: 0;
+}
+
+.section{
+    height: 100vh;
+}
