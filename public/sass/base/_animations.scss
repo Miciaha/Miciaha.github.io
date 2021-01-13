@@ -27,10 +27,13 @@
 
 @include keyframes(rainbow){
     0% {color: $blue;}
-    20% {color: $green;}
-    40%{color: $orange;}
-    60%{color: $red;}
-    80%{color: $purple;}
+    40%{color: #00a799;}
+    60%{color: $purple;}
     100%{color: $blue;}
+}
+
+@include keyframes(blink){
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 

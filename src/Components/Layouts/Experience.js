@@ -1,17 +1,22 @@
 import React from "react";
 import { Grid, Slug, Fade} from 'mauerwerk'
+import { CloseOutlined} from '@ant-design/icons'
 import data from '../../expData'
 
-const Cell = ({ toggle, name, height, description, css, maximized, logo, logoSize }) => (
+const Cell = ({ toggle, name, height, description, css, maximized, logo, logoSize, show, date }) => (
   <div
     className="cell"
-    style={{ backgroundImage: 'linear-gradient(to top, #fff 0%, #fff 100%)', cursor: !maximized ? 'pointer' : 'auto' }}
+    style={{ backgroundImage: 'linear-gradient(to top, #fff 0%, #fff 100%)', cursor: !maximized ? 'pointer' : 'auto', display: show }}
     onClick={!maximized ? toggle : undefined}>
     <Fade show={maximized} delay={maximized ? 400 : 0}>
       <div className="details" onClick={toggle}>
         <Slug delay={600}>
+          <div className='close'>
+            <CloseOutlined style={{cursor: 'pointer'}} onClick={toggle} />
+          </div>
           <h1>{name}</h1>
           <p>{description}</p>
+          <p>{date}</p>
         </Slug>
       </div>
     </Fade>
@@ -54,6 +59,7 @@ class Experience extends React.Component {
           lockScroll={false}
           // Delay when active elements (blown up) are minimized again
           closeDelay={400}>
+    
           {(data, maximized, toggle) => (
             <Cell {...data} maximized={maximized} toggle={toggle} />
           )}
